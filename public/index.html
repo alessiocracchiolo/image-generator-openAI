@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenAI Generatore di immagini</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/spinner.css">
+
+</head>
+<body>
+
+    <div class="container">
+
+        <form class="form" id="image-form">
+
+            <div class="title">Benvenutə</div>
+            
+            <div class="subtitle">Genera la tua immagine scrivendo del testo</div>
+            
+            <div class="input-container ic1">
+            
+                <input id="prompt" class="input" type="text" placeholder="Descrivi la tua immagine" />
+            
+            </div>
+            
+            <div class="input-container ic2">
+            
+                <input id="size" class="input" type="text" placeholder="small/medium/large" />
+            
+            </div>
+            
+            <button type="submit" class="submit">Genera</button>
+        
+        </form>
+    
+        <div id="spinner-container">
+            <div class="spinner" id="spinner">
+            </div>
+        </div>    
+
+    </div>
+    
+    <div class="image">
+        
+        <div class="image-container">
+        
+            <h2 class="msg"></h2>
+        
+            <img src="" alt="" id="image" />
+        
+        </div>
+
+        <div class="close"></div>
+    
+    </div>
+    
+
+    <script src="/js/main.js"></script>
+
+</body>
+</html>
